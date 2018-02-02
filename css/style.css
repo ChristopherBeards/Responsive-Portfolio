@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
   font-size: 16px;
@@ -8,13 +9,6 @@ body, html {
   color: #666;
   padding: 20px;
 }
-
-
-
-// NAVIGATION
-
-
-
 nav {
   position: fixed;
   z-index: 2;
@@ -23,46 +17,37 @@ nav {
   width: 100%;
   height: 100px;
   padding: 10px, 100px;
-  box-sizing: border-box; //defines how the width and height of an element are calculated
+  box-sizing: border-box;
   transition: 3s;
   background: rgba(0, 0, 0, 0.8);
   height: 90px;
   padding: 10px 100px;
-
-    ul {
-     list-style: none; // removes bullets
-     margin: 0;
-     padding: 0;
-     display: flex;
-     justify-content: space-around;
-      
-      li {
-        list-style: none;
-        font-size: 18px;
-        
-        a {
-          line-height: 80px;
-          color: #666; //or fff
-          padding: 30px 30px;
-          text-decoration: none;
-          text-transform: uppercase;
-          transition: .3s;
-          
-          &:hover {
-            color: #fff;
-          }
-        }
-     }
-  }
 }
-
-
-
-// IMAGES
-
-
-
-.img1, .img2, .img3 {
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li {
+  list-style: none;
+  font-size: 18px;
+}
+nav ul li a {
+  line-height: 80px;
+  color: #666;
+  padding: 30px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .3s;
+}
+nav ul li a:hover {
+  color: #fff;
+}
+.img1,
+.img2,
+.img3 {
   position: relative;
   opacity: 0.70;
   background-position: center;
@@ -70,49 +55,31 @@ nav {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
 .img1 {
   background-image: url('https://40yearsofzen.com/wp-content/uploads/2016/06/40zenbackdrop_thumb.jpg');
   min-height: 100%;
 }
-
-
 .img2 {
-  background-image:url('http://www.bestcolleges.com/wp-content/uploads/masters_software_engineering.jpg');
+  background-image: url('http://www.bestcolleges.com/wp-content/uploads/masters_software_engineering.jpg');
   min-height: 400px;
 }
-
-
 .img3 {
-  background-image:url('https://cdn.tinybuddha.com/wp-content/uploads/2013/07/Meditating-1.jpg');
+  background-image: url('https://cdn.tinybuddha.com/wp-content/uploads/2013/07/Meditating-1.jpg');
   min-height: 400px;
 }
-
-
-
-// HIGHLIGHT SECTIONS
-
-
-
-.section  {
+.section {
   text-align: justified;
   padding: 50px 80px;
+  margin: 0px 50px;
 }
-
 .section-light {
   background-color: #f4f4f4;
   color: #666;
 }
-
-.section-dark  {
+.section-dark {
   background-color: #282e34;
   color: #ddd;
 }
-
-
-// MAIN CONTENT
-
-
 .text {
   position: absolute;
   top: 50%;
@@ -123,21 +90,18 @@ nav {
   letter-spacing: 8px;
   text-transform: uppercase;
 }
-
-.text .border  {
+.text .border {
   background-color: #111;
   color: #fff;
   padding: 20px;
 }
-
 .text .border .trans {
- background-color: transparent;
+  background-color: transparent;
 }
-
-
-@media(max-width:568px) {
-  .img1, .img2, .img3 {
+@media (max-width: 568px) {
+  .img1,
+  .img2,
+  .img3 {
     background-attachment: scroll;
   }
 }
-  
